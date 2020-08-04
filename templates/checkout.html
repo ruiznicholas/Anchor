@@ -1,105 +1,110 @@
 <html>
-
 <head>
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<title>Checkout</title>
-	<style>
-		body {
-			background-color: #bdcfffff;
-		}
-	</style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Checkout</title>
+    <style>
+        body {
+            background-color: #bdcfffff;
+        }
+    </style>
 </head>
-
 <body>
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light ">
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li>
-						<a class="nav-link active" href="index">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="products">Products</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="checkout">Checkout</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	</div>
-	<h1 style="text align: center;">Checkout</h1>
-	<div class="container">
-		<form method="post" action="/charges">
-			<div class="form-row">
-				<div class="col">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-						<label class="form-check-label" for="defaultCheck1">TAP (The Anchor Pencil) $3.50</label>
-					</div>
-				</div>
-				<div class="col">
-					<div>
-						<label for="inputNumber4">Number of Products</label>
-						<input type="number" name="num_products" class="form-control" id="inputNumber4">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-link active" href="index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="checkout">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <h1 style="text align: center;">Checkout</h1>
+    <div class="container">
+        <form method="post" action="/charges">
+            <div class="form-row">
+                <div class="col">
+                <img src="static/images/TAP_(black).png" width="130" height="100" >
+                <br></br>
+                <img src="static/images/TAP_(Red).png" width="130" height="100" >
+                <br></br>
+                <img src="static/images/TAP_(Gold2).png" width="130" height="100" >
+                </div>
+                <div class="col">
+                    <div>
+                        <label for="inputNumber1">Number of Black Pencils</label>
+                        <input type="number" name="num_products1" class="form-control" id="inputNumber1">
                     </div>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="inputEmail4">Email</label>
-						<input type="email" class="form-control" id="inputEmail4">
+                    <div>
+                        <label for="inputNumber2">Number of Red Pencils</label>
+                        <input type="number" name="num_products2" class="form-control" id="inputNumber2">
+                    </div>
+                    <div>
+                        <label for="inputNumber3">Number of Gold Pencils</label>
+                        <input type="number" name="num_products3" class="form-control" id="inputNumber3">
+                    </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
     </div>
-						<div class="form-group col-md-6">
-							<label for="inputPassword4">Password</label>
-							<input type="password" class="form-control" id="inputPassword4">
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
     </div>
-						</div>
-						<div class="form-group">
-							<label for="inputAddress">Address</label>
-							<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
-							<div class="form-group">
-								<label for="inputAddress2">Address 2</label>
-								<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
   </div>
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="inputCity">City</label>
-										<input type="text" class="form-control" id="inputCity">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
     </div>
-										<div class="form-group col-md-4">
-											<label for="inputState">State</label>
-											<select id="inputState" class="form-control">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState">State</label>
+                                            <select id="inputState" class="form-control">
         <option selected>Choose...</option>
         <option>...</option>
       </select>
-										</div>
-										<div class="form-group col-md-2">
-											<label for="inputZip">Zip</label>
-											<input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
     </div>
-										</div>
-										<div class="form-group">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" id="gridCheck">
-												<label class="form-check-label" for="gridCheck">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
         Check me out
       </label>
-											</div>
-										</div>
-										<input type="submit" class="btn btn-primary"></input>
-		</form>
-	</div>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-primary"></input>
+        </form>
+    </div>
 </body>
-
-</html>
